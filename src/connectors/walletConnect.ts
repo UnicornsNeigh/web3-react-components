@@ -15,3 +15,10 @@ export const [walletConnect, hooks] = initializeConnector<WalletConnect>(
             },
         })
 )
+
+
+
+
+export const print = (str: string) => {
+    console.log(str);
+}

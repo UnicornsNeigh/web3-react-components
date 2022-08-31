@@ -1,13 +1,14 @@
-import walletconnect from "../../assets/svg/wallet-connect.svg";
+import React from "react";
+import metamask from "../../assets/img/metamask.png";
 import WalletOption from "./WalletOption";
 
-import { walletConnect } from "../../connectors/walletConnect";
+import { metaMask } from "../../connectors/metaMask";
 
 const Metamask = () => {
   return (
     <WalletOption
       onClick={() => {
-        walletConnect
+        metaMask
           .activate()
           .then((success) => {
             console.log(success);
@@ -17,8 +18,8 @@ const Metamask = () => {
             console.log(err);
           });
       }}
-      text="WalletConnect"
-      src={walletconnect.src}
+      text="MetaMask"
+      src={metamask.src}
     />
   );
 };

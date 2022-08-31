@@ -1,7 +1,15 @@
 import { CoinbaseWallet } from '@web3-react/coinbase-wallet'
 import { initializeConnector } from '@web3-react/core'
 // import { URLS } from '../chains'
+// random
 
+const yo: string = "hi";
+
+
+interface Bob {
+    name: string;
+    lastname: string;
+}
 
 export const [coinbaseWallet, hooks] = initializeConnector<CoinbaseWallet>(
     (actions) => {

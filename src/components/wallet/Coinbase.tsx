@@ -1,3 +1,4 @@
+import React from "react";
 import coinbaseWalletSvg from "../../assets/svg/coinbase-wallet.svg";
 import WalletOption from "./WalletOption";
 import { useEffect } from "react";
